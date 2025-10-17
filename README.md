@@ -18,9 +18,10 @@ Website ini dirancang dengan **HTML5**, **CSS3**, dan **Bootstrap** agar tampil 
 
 ## 🧰 Teknologi yang Digunakan
 
-|--------------------------------------------------------------- |
 | **HTML5** | Struktur page dan elemen konten. |
 | **CSS3** | Styling, color, dan efek visual. |
 | **Bootstrap 5** | Framework front-end untuk responsivitas dan komponen siap pakai. |
+
+---
 
 ---
