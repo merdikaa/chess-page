@@ -1,0 +1,120 @@
+/* ---------- GRADIENT BACKGROUND ---------- */
+.gradient-background {
+  background: linear-gradient(-45deg, #232526, #414345, #0f2027, #203a43);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ---------- GENERAL ---------- */
+html {
+  scroll-behavior: smooth;
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  border-radius: 50%;
+  height: 100px;
+}
+
+/* ---------- TITLE / HERO SECTION ---------- */
+#title {
+  position: relative;
+  min-height: 100vh;
+  color: #fff;
+  overflow: hidden;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.66),
+      rgba(0, 0, 0, 0.32)
+    ),
+    url("./images/ChessAcademy.jpg") right center/cover no-repeat;
+  background-attachment: scroll;
+}
+
+#title::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0));
+  pointer-events: none;
+}
+
+#title .container,
+#title .row,
+#title .col-lg-6 {
+  position: relative;
+  z-index: 2;
+}
+
+/* hide gambar hero (karena sudah jadi background) */
+#title .col-10.col-sm-8.col-lg-6 img {
+  display: none !important;
+}
+
+/* Teks hero */
+#title h1 {
+  color: #fff !important;
+  font-size: clamp(2rem, 4.2vw, 3.2rem);
+  line-height: 1.06;
+  font-weight: 800;
+}
+
+/* Tombol hero */
+#title .btn-light {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 12px;
+  padding: 0.7rem 1.25rem;
+  font-weight: 600;
+}
+
+#title .btn-outline-light {
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 12px;
+  padding: 0.65rem 1.25rem;
+  font-weight: 600;
+}
+
+#title .btn-outline-light:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Responsif */
+@media (max-width: 767px) {
+  #title {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.35)
+      ),
+      url("./images/ChessAcademy.jpg") center top/cover no-repeat;
+  }
+}
+
+/* ---------- FOOTER ---------- */
+#contact footer h5,
+#contact footer .nav-link,
+#contact footer p {
+  color: white !important;
+}
